@@ -66,6 +66,7 @@ from bfcl_eval.model_handler.local_inference.salesforce_qwen import (
     SalesforceQwenHandler,
 )
 from bfcl_eval.model_handler.local_inference.think_agent import ThinkAgentHandler
+from bfcl_eval.model_handler.local_inference.jais_plus import JaisPlusHandler
 
 # -----------------------------------------------------------------------------
 # A mapping of model identifiers to their respective model configurations.
@@ -2049,6 +2050,18 @@ local_inference_model_map = {
         input_price=None,
         output_price=None,
         is_fc_model=True,
+        underscore_to_dot=False,
+    ),
+    "JaisPlus": ModelConfig(
+        model_name="JaisPlus",
+        display_name="JaisPlus (Prompt)",
+        url="",
+        org="Internal",
+        license="Proprietary",
+        model_handler=JaisPlusHandler,
+        input_price=None,
+        output_price=None,
+        is_fc_model=False,
         underscore_to_dot=False,
     ),
 }

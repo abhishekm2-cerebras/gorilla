@@ -183,4 +183,5 @@ SUPPORTED_MODELS = [
     "qwen3-4b-think-FC",
     "qwen3-4b-nothink-FC",
     "DM-Cito-32B-v1",
+    "JaisPlus",
 ]
